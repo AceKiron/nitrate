@@ -1,0 +1,17 @@
+@use "sass:math";
+
+$size-unit: 0.25rem !default;
+$huge: 9999px !default;
+$complexity: 24 !default;
+$max-grid-cols: 12 !default;
+
+$xs2-size: 0.5rem !default;
+$xs-size: calc(0.5rem + math.div(1rem, 3)) !default;
+$sm-size: calc(0.5rem + math.div(2rem, 3)) !default;
+$md-size: 1rem !default;
+$lg-size: 1.25rem !default;
+$xl-size: 1.5rem !default;
+$xl2-size: 1.75rem !default;
+
+$black-color: #0A0A0A !default;
+$white-color: #F5F5F5 !default;

@@ -1,0 +1,31 @@
+@for $i from 0 through $complexity {
+    .px-#{$i} {
+        padding-left: calc($i * $size-unit);
+        padding-right: calc($i * $size-unit);
+    }
+
+    .py-#{$i} {
+        padding-top: calc($i * $size-unit);
+        padding-bottom: calc($i * $size-unit);
+    }
+
+    .pl-#{$i} {
+        padding-left: calc($i * $size-unit);
+    }
+
+    .pr-#{$i} {
+        padding-right: calc($i * $size-unit);
+    }
+
+    .pt-#{$i} {
+        padding-top: calc($i * $size-unit);
+    }
+
+    .pb-#{$i} {
+        padding-bottom: calc($i * $size-unit);
+    }
+
+    .p-#{$i} {
+        padding: calc($i * $size-unit);
+    }
+}

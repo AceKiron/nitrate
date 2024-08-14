@@ -1,0 +1,29 @@
+@for $i from 1 through 100 {
+    .w-#{$i} {
+        width: calc($i * 1%);
+    }
+
+    .h-#{$i} {
+        height: calc($i * 1%);
+    }
+
+    .size-#{$i} {
+        width: calc($i * 1%);
+        height: calc($i * 1%);
+    }
+}
+
+@for $i from 1 through 64 {
+    .w-#{$i}px {
+        width: calc($i * 1px);
+    }
+
+    .h-#{$i}px {
+        height: calc($i * 1px);
+    }
+
+    .size-#{$i}px {
+        width: calc($i * 1px);
+        height: calc($i * 1px);
+    }
+}

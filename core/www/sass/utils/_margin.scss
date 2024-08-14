@@ -1,0 +1,31 @@
+@for $i from 0 through $complexity {
+    .mx-#{$i} {
+        margin-left: calc($i * $size-unit);
+        margin-right: calc($i * $size-unit);
+    }
+
+    .my-#{$i} {
+        margin-top: calc($i * $size-unit);
+        margin-bottom: calc($i * $size-unit);
+    }
+
+    .ml-#{$i} {
+        margin-left: calc($i * $size-unit);
+    }
+
+    .mr-#{$i} {
+        margin-right: calc($i * $size-unit);
+    }
+
+    .mt-#{$i} {
+        margin-top: calc($i * $size-unit);
+    }
+
+    .mb-#{$i} {
+        margin-bottom: calc($i * $size-unit);
+    }
+
+    .m-#{$i} {
+        margin: calc($i * $size-unit);
+    }
+}

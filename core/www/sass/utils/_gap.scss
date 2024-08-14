@@ -1,0 +1,13 @@
+@for $i from 0 through $complexity {
+    .gap-#{$i} {
+        gap: calc($i * $size-unit);
+    }
+
+    .gap-x-#{$i} {
+        column-gap: calc($i * $size-unit);
+    }
+
+    .gap-y-#{$i} {
+        row-gap: calc($i * $size-unit);
+    }
+}

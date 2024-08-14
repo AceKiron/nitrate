@@ -1,0 +1,20 @@
+@use "sass:map";
+
+$colors: (
+    "black": $black-color,
+    "white": $white-color,
+) !default;
+
+@for $i from 1 through 9 {
+    $colors: map.set($colors, "gray-#{$i}", mix($black-color, $white-color, calc(10% * $i)));
+}
+
+@each $key, $value in $colors {
+    .text-#{$key} {
+        color: $value;
+    }
+
+    .bg-#{$key} {
+        background-color: $value;
+    }
+}

@@ -1,0 +1,11 @@
+@for $grid-columns from 1 through $max-grid-cols {
+    .grid-cols-#{$grid-columns} {
+        grid-template-columns: repeat($grid-columns, minmax(0, 1fr));
+
+        @for $i from 1 through $grid-columns {
+            .col-#{$i} {
+                grid-column: span $i / span $i;
+            }
+        }
+    }
+}

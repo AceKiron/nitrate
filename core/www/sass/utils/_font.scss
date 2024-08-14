@@ -1,0 +1,15 @@
+.font-bold {
+    font-weight: bold;
+}
+
+@each $key, $value in $sizes {
+    .text-#{$key} {
+        font-size: $value;
+    }
+}
+
+@for $i from 1 through 9 {
+    .font-weight-#{$i} {
+        font-weight: calc($i * 100);
+    }
+}

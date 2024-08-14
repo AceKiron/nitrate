@@ -1,0 +1,5 @@
+@for $i from 1 through 64 {
+    .r-#{$i}px {
+        border-radius: calc($i * 1px);
+    }
+}
