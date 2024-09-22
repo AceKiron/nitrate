@@ -1,4 +1,4 @@
-Tables.create("users", function(table) {
+Tables.createIfNotExists("users", function(table) {
     table.id();
     
     table.string("username").unique();
