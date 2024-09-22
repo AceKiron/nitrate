@@ -1,1 +1,3 @@
-Table.dropIfExists("users");
+module.exports = (Table) => {
+    Table.dropIfExists("users");
+}
