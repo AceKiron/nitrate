@@ -1,14 +1,14 @@
 module.exports = (Table) => {
-    Tables.createIfNotExists("users", function(table) {
+    Table.createIfNotExists("users", function(table) {
         table.id();
         
-        table.string("username").unique();
-        table.string("email").unique();
-    
-        table.timestamp("email_verified_at").nullable();
-        
+        table.string("username", table.mods.unique);
+        table.string("email", table.mods.unique);
+
+        table.timestamp("email_verified_at", table.mods.nullable);
+
         table.hash("password", "password_salt");
-    
+
         table.timestamps();
     });
 }
