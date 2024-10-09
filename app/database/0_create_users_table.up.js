@@ -7,7 +7,7 @@ module.exports = (Table) => {
 
         table.timestamp("email_verified_at", table.mods.nullable);
 
-        table.hash("password", "password_salt");
+        table.hash("password");
 
         table.timestamps();
     });

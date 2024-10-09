@@ -4,6 +4,7 @@
         "dev": "npx gulp"
     },
     "dependencies": {
+        "better-sqlite3": "^11.3.0",
         "nunjucks": "^3.2.4"
     },
     "devDependencies": {
